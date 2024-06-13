@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sytle.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs-container">
+        <div class="input">
+          <label for="Day">DAY</label>
+          <input id="Day" type="number" min="1" max="31" placeholder="DD" />
+          <p>This value is required</p>
+        </div>
+        <div class="input">
+          <label for="Month">MONTH</label>
+          <input id="Mentor" type="number" min="1" max="12" placeholder="MM" />
+          <p>This value is required</p>
+        </div>
+        <div class="input">
+          <label for="Year">YEAR</label>
+          <input id="Year" type="number" min="1" max="31" placeholder="YYYY" />
+          <p>This value is required</p>
+        </div>
+      </div>
+      <div class="hr-btn">
+        <hr />
+        <button class="submit-btn">
+          <img src="./assets/images/icon-arrow.svg" />
+        </button>
+      </div>
+      <div class="flex-container">
+        <span id="years">--</span>
+        <h1>years</h1>
+      </div>
+      <div class="flex-container">
+        <span id="months">--</span>
+        <h1>months</h1>
+      </div>
+      <div class="flex-container">
+        <span id="days">--</span>
+        <h1>days</h1>
+      </div>
+    </div>
+  </body>
 </html>
