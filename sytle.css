@@ -46,10 +46,14 @@ input::-webkit-inner-spin-button {
 }
 
 p {
-  font-size: 8px;
+  font-size: 9px;
   color: red;
   font-style: italic;
   display: none;
+}
+
+.shown {
+  display: block;
 }
 
 .inputs-container {
@@ -81,7 +85,7 @@ hr {
 
 span {
   color: hsl(259, 100%, 65%);
-  font-size: 40px;
+  font-size: 52px;
   font-weight: 800;
   letter-spacing: 4px;
 }
@@ -91,6 +95,12 @@ span {
   align-items: center;
   font-size: 32px;
   font-style: italic;
+  gap: 1rem;
+}
+
+.error {
+  border-color: red;
+  color: red;
 }
 
 @media (max-width: 430px) {
@@ -102,6 +112,10 @@ span {
     width: 5rem;
   }
   .flex-container {
-    font-size: 30px;
+    font-size: 25px;
+    gap: 11px;
+  }
+  .span {
+    font-size: 25px;
   }
 }

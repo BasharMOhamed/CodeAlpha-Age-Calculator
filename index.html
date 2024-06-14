@@ -16,25 +16,25 @@
   <body>
     <div class="container">
       <div class="inputs-container">
-        <div class="input">
+        <div id="day-input" class="input">
           <label for="Day">DAY</label>
           <input id="Day" type="number" min="1" max="31" placeholder="DD" />
-          <p>This value is required</p>
+          <p id="day-error">This value is required</p>
         </div>
-        <div class="input">
+        <div id="month-input" class="input">
           <label for="Month">MONTH</label>
-          <input id="Mentor" type="number" min="1" max="12" placeholder="MM" />
-          <p>This value is required</p>
+          <input id="Month" type="number" min="1" max="12" placeholder="MM" />
+          <p id="month-error">This value is required</p>
         </div>
-        <div class="input">
+        <div id="year-input" class="input">
           <label for="Year">YEAR</label>
           <input id="Year" type="number" min="1" max="31" placeholder="YYYY" />
-          <p>This value is required</p>
+          <p id="year-error">This value is required</p>
         </div>
       </div>
       <div class="hr-btn">
         <hr />
-        <button class="submit-btn">
+        <button id="submit-btn" class="submit-btn">
           <img src="./assets/images/icon-arrow.svg" />
         </button>
       </div>
@@ -51,5 +51,6 @@
         <h1>days</h1>
       </div>
     </div>
+    <script src="./index.js" />
   </body>
 </html>
